@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  spc:
+    build: .
+    ports:
+      -8080:8080
+    networks:
+      - spc-net
+networks:
+  spc-net:
